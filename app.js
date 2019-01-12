@@ -54,7 +54,7 @@ app.get('/getData', (req, res) => {
    db.query(sql, (err, result) => {
        if(err) throw err;
        console.log(result);
-       res.send("fetch..")  
+       res.send("Data Fetched...")  
    })
 })
 
@@ -64,7 +64,7 @@ app.get('/getData/:id', (req, res) => {
     db.query(sql, (err, result) => {
         if(err) throw err;
         console.log(result);
-        res.send("fetch..")  
+        res.send("Data retrieve of perticular user.")  
     })
  })
 
@@ -75,7 +75,7 @@ app.get('/updateData/:id', (req, res) => {
     db.query(sql, (err, result) => {
         if(err) throw err;
         console.log(result);
-        res.send("updated...")  
+        res.send("Data Updated.")  
     })
  })
 
@@ -86,7 +86,7 @@ app.get('/deleteData/:id', (req, res) => {
     db.query(sql, (err, result) => {
         if(err) throw err;
         console.log(result);
-        res.send("deleted...")  
+        res.send("Data Deleted.")  
     })
  })
 
